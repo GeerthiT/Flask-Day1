@@ -1,0 +1,38 @@
+Basic Routing:
+ 
+Create a Flask application with three routes:
+
+Route 1: Display a welcome message on the home page.
+Route 2: Display information about yourself on a separate page.
+Route 3: Create a custom 404 error page.
+ 
+Form Handling:
+Create a form with Flask that takes user input (e.g., name, email) and displays it on a new page after submission.
+ 
+Static files:
+Add a CSS file to your Flask project and style your HTML pages.
+Use the url_for function to include the CSS file in your templates.
+ 
+File Upload:
+Create a Flask route that allows users to upload files. Save the uploaded files on the server and display a list of uploaded files on another page.
+ 
+ 
+API Endpoint:
+Create a simple RESTful API using Flask. Implement endpoints for GET, POST, and DELETE operations on a resource (e.g., a list of tasks).
+code exmaple
+ 
+Python
+@app.route('/tasks', methods=['GET'])
+def get_tasks():
+        #TODO
+
+@app.route('/tasks', methods=['POST'])
+def add_task():
+        #TODO
+    
+@app.route('/tasks/<int:task_id>', methods=['DELETE'])
+def delete_task(task_id):
+        #TODO
+    
+if __name__ == '__main__':
+    app.run(debug=True)

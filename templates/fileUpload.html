@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">     
+          <h3 class="text-center">Upload files here : images only</h3> 
+        </div>
+    </div>   
+
+    <div class="d-flex justify-content-center">
+        <form action="{{ url_for('fileUpload') }}" method="post" enctype="multipart/form-data">
+            <input type="file" id="myFile" name="file">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br><br>
+    <h3><a href="{{ url_for('list_files') }}">View Uploaded Files</a></h3>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br><br>
+
+<div class="container">
+
+    
+      <img src="{{url_for('static', filename='error.gif')}}" alt="error" class="mx-auto d-block">
+
+</div>
+<br>
+<h3><a href="{{ url_for('fileUpload') }}">Back</a></h3>
+
+{% endblock %}

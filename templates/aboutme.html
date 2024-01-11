@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br><br>
+
+    <div class="container" >
+        <div class="d-flex justify-content-center">
+        <h2>Its me.....</h2>
+        </div>  
+        <br>
+        <div class=" d-flex justify-content-center">
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="{{url_for('static', filename='meerkat.jpg')}}" alt="meerkat" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">Meerkat</h4>
+            <p class="card-text">The Meerkat a small mongoose found in southern Africa. It is characterised by a broad head, large eyes, a pointed snout, long legs, a thin tapering tail, and a brindled coat pattern. The head-and-body length is around 24–35 cm (9.4–13.8 in), and the weight is typically between 0.62 and 0.97 kg (1.4 and 2.1 lb). The coat is light grey to yellowish-brown with alternate, poorly-defined light and dark bands on the back. Meerkats have foreclaws adapted for digging and have the ability to thermoregulate to survive in their harsh, dry habitat. </p>
+        </div>
+          </div>
+        </div>
+        <br>
+       
+{% endblock %}
